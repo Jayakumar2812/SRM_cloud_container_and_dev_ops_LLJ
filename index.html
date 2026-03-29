@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jaya Kumar | Portfolio</title>
+    <meta
+      name="description"
+      content="A modern portfolio website for showcasing projects, skills, and contact information."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#home">JK</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="nav-links"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul id="nav-links" class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Toggle theme">
+          <span class="theme-toggle__text">Dark mode</span>
+        </button>
+      </header>
+
+      <main id="home">
+        <section class="hero section">
+          <div class="hero__content">
+            <p class="eyebrow">Cloud and DevOps Learner</p>
+            <h1>Hi, I'm Jaya Kumar. I build clean web experiences and deploy them with confidence.</h1>
+            <p class="hero__lead">
+              This small portfolio app showcases a modern personal website that can be
+              deployed through an AWS CI/CD pipeline using GitHub, CodeBuild, and CodeDeploy.
+            </p>
+            <div class="hero__actions">
+              <a class="button button--primary" href="#projects">View Projects</a>
+              <a class="button button--ghost" href="#contact">Contact Me</a>
+            </div>
+            <ul class="hero__highlights">
+              <li>Responsive single-page portfolio</li>
+              <li>Perfect for GitHub and AWS deployment demos</li>
+              <li>Easy to customize for your mini project</li>
+            </ul>
+          </div>
+
+          <aside class="hero-card">
+            <div class="hero-card__status">
+              <span class="status-dot"></span>
+              Available for internship projects
+            </div>
+            <h2>Quick Snapshot</h2>
+            <dl class="snapshot">
+              <div>
+                <dt>Focus</dt>
+                <dd>Cloud, DevOps, Frontend</dd>
+              </div>
+              <div>
+                <dt>Location</dt>
+                <dd>Tamil Nadu, India</dd>
+              </div>
+              <div>
+                <dt>Current Goal</dt>
+                <dd>Automate build, test, and deployment with AWS</dd>
+              </div>
+            </dl>
+          </aside>
+        </section>
+
+        <section id="about" class="section">
+          <div class="section-heading">
+            <p class="eyebrow">About</p>
+            <h2>Building practical solutions with code and cloud tools</h2>
+          </div>
+          <div class="grid-two">
+            <article class="card">
+              <p>
+                I am a student developer interested in web development, cloud platforms,
+                containers, and automation. I enjoy turning simple ideas into polished,
+                user-friendly applications and learning how to deploy them using industry tools.
+              </p>
+              <p>
+                This portfolio is intentionally lightweight so it can be hosted on an EC2
+                instance and updated automatically whenever new code is pushed to GitHub.
+              </p>
+            </article>
+            <article class="card">
+              <h3>What I care about</h3>
+              <ul class="stack-list">
+                <li>Readable and maintainable code</li>
+                <li>Reliable deployment workflows</li>
+                <li>Simple, elegant user interfaces</li>
+                <li>Continuous learning through projects</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section id="skills" class="section">
+          <div class="section-heading">
+            <p class="eyebrow">Skills</p>
+            <h2>Tools and technologies I use</h2>
+          </div>
+          <div class="skills-grid">
+            <article class="card skill-card">
+              <h3>Frontend</h3>
+              <p>HTML, CSS, JavaScript, responsive design, UI structure</p>
+            </article>
+            <article class="card skill-card">
+              <h3>Backend Basics</h3>
+              <p>Python basics, APIs, simple automation scripts</p>
+            </article>
+            <article class="card skill-card">
+              <h3>Cloud and DevOps</h3>
+              <p>AWS EC2, CodePipeline, CodeBuild, CodeDeploy, Git, CI/CD</p>
+            </article>
+            <article class="card skill-card">
+              <h3>Core Strengths</h3>
+              <p>Problem solving, collaboration, debugging, continuous improvement</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="projects" class="section">
+          <div class="section-heading">
+            <p class="eyebrow">Projects</p>
+            <h2>Selected work</h2>
+          </div>
+          <div class="projects-grid">
+            <article class="card project-card">
+              <p class="project-card__tag">Featured Project</p>
+              <h3>AWS DevOps Portfolio Deployment</h3>
+              <p>
+                A static portfolio site connected to GitHub and deployed to AWS using a
+                CI/CD pipeline with automated build and release stages.
+              </p>
+              <ul class="project-meta">
+                <li>GitHub integration</li>
+                <li>AWS CodePipeline workflow</li>
+                <li>EC2 deployment with CodeDeploy</li>
+              </ul>
+            </article>
+            <article class="card project-card">
+              <p class="project-card__tag">Learning Project</p>
+              <h3>Containerized Demo Application</h3>
+              <p>
+                A sample application prepared for deployment using containers, build
+                automation, and cloud-based testing practices.
+              </p>
+              <ul class="project-meta">
+                <li>Docker-ready setup</li>
+                <li>Cloud deployment concepts</li>
+                <li>Scalable app structure</li>
+              </ul>
+            </article>
+            <article class="card project-card">
+              <p class="project-card__tag">Frontend Practice</p>
+              <h3>Responsive Personal Website</h3>
+              <p>
+                A modern, mobile-friendly website built to present academic work,
+                technical skills, and project updates in a clean layout.
+              </p>
+              <ul class="project-meta">
+                <li>Responsive UI</li>
+                <li>Accessible layout</li>
+                <li>Easy customization</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section id="experience" class="section">
+          <div class="section-heading">
+            <p class="eyebrow">Experience</p>
+            <h2>My current learning journey</h2>
+          </div>
+          <div class="timeline">
+            <article class="timeline-item card">
+              <span class="timeline-item__year">2026</span>
+              <h3>Cloud and DevOps Mini Project</h3>
+              <p>
+                Implementing an end-to-end pipeline using AWS DevOps services and Git
+                integration for automatic build, testing, and deployment.
+              </p>
+            </article>
+            <article class="timeline-item card">
+              <span class="timeline-item__year">2025</span>
+              <h3>Web Development Practice</h3>
+              <p>
+                Built small frontend projects focused on layout design, responsiveness,
+                and improved user experience.
+              </p>
+            </article>
+            <article class="timeline-item card">
+              <span class="timeline-item__year">Ongoing</span>
+              <h3>Skill Development</h3>
+              <p>
+                Exploring cloud deployment, Linux basics, version control workflows, and
+                automation practices used in real DevOps environments.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="contact" class="section">
+          <div class="section-heading">
+            <p class="eyebrow">Contact</p>
+            <h2>Let's connect</h2>
+          </div>
+          <div class="contact-panel card">
+            <p>
+              Want to collaborate on student projects, web apps, or cloud deployment demos?
+              Reach out through the channels below.
+            </p>
+            <div class="contact-links">
+              <a href="mailto:jayakumar@example.com">jayakumar@example.com</a>
+              <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub Profile</a>
+              <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>&copy; <span id="current-year"></span> Jaya Kumar. Built for AWS Learner Lab deployment.</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
