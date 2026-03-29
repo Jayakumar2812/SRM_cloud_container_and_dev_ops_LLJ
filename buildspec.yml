@@ -1,0 +1,27 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Install phase started on $(date)"
+  pre_build:
+    commands:
+      - echo "Running basic validation checks"
+      - test -f index.html
+      - test -f styles.css
+      - test -f script.js
+      - test -f appspec.yml
+  build:
+    commands:
+      - echo "Build phase started on $(date)"
+      - mkdir -p dist
+      - cp index.html styles.css script.js appspec.yml dist/
+      - cp -R scripts dist/scripts
+  post_build:
+    commands:
+      - echo "Build completed successfully on $(date)"
+
+artifacts:
+  files:
+    - '**/*'
+  base-directory: dist
